@@ -1,0 +1,75 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  background: url('hero.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+#modal {
+  background-color: white;
+  width: 400px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 0 20px grey;
+}
+
+#modal-content {
+  position: relative;
+  background-color: whitesmoke;
+  width: 400px;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 7px;
+  box-shadow: 0 0 5px lightgrey;
+}
+
+#close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.5rem;
+  color: rgb(99, 32, 167);
+  cursor: pointer;
+  transition: transform .1s ease-in-out;
+}
+
+#close:hover {
+  transform: rotate(90deg);
+}
+
+#cover {
+  position: absolute;
+  background-color: rgba(71, 166, 224, .5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+#btn {
+  padding: .4rem 1rem;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(71, 166, 224);
+  box-shadow: 0 0 5px lightgrey;
+  letter-spacing: 3px;
+}
+
+#btn:hover {
+  background-color: rgb(66, 142, 189);
+}
